@@ -1,0 +1,17 @@
+{
+  "name": "project_backend",
+  "version": "1.0.0",
+  "description": "mega project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mega",
+    "javascript",
+    "project",
+    "backend"
+  ],
+  "author": "DV",
+  "license": "ISC"
+}
