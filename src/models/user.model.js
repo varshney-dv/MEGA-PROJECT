@@ -52,9 +52,9 @@ const userSchema=new Schema(
 }
    )
 
-userSchema.prev("save", async function(next){
+userSchema.pre("save", async function(next){
     if(!this.isModified("password")) return next(); // If passowrd modify nhi hua hia toh direct modify kar do
-    this.password=bcrypt.hash(this.password,10)
+    this.password=await bcrypt.hash(this.password,10)
     next()
 })
 
